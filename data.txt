@@ -1,0 +1,10 @@
+In this article we will see how we can create a scroll-able label, by default when we create a label all the text is in the single line and if length of text is greater than label, extra text didn’t show, although with the help of setWordWrap method we can create a multi-line label but still if the text exceeds it will not show in the label.
+In order to show whole text in a small label we have to make label scroll-able, in order to do this we have to make our own scrollable label class which inherits the QScrollArea class which allow us to make label scroll-able, below is how scroll-able label looks like
+
+In order to do this we have to do the following –
+1. Create a new class which inherits QScrollArea 
+2. Inside the class create vertical layout 
+3. Create a label 
+4. Make the label multi-line 
+5. Over-ride the setText method for label 
+6. Creating object of this class inside the main window class and setting text to it 
